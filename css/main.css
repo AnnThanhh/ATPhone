@@ -512,6 +512,9 @@ header #site-header .navbar-collapse.show {
 .dark .cardPhone .cardPhone__text {
   color: white;
 }
+.dark .loai {
+  color: white;
+}
 
 .dark .number .number__item p:last-of-type {
   color: white;
