@@ -88,29 +88,6 @@ function getLocalStorage() {
   renderCart();
 }
 
-document.addEventListener("click", function (event) {
-  if (event.target.classList.contains("btnAT-buy")) {
-    const clickedProductID = event.target.dataset.productId;
-    const clickedProduct = product.find((item) => item.id === clickedProductID);
-
-    if (clickedProduct) {
-      let existingCartItem = cart.find(
-        (item) => item.product.id === clickedProduct.id
-      );
-
-      if (existingCartItem) {
-        existingCartItem.quantity++;
-      } else {
-        let newCartItem = { product: clickedProduct, quantity: 1 };
-        cart.push(newCartItem);
-      }
-
-      renderCart();
-      setLocalStorage();
-    }
-  }
-});
-
 function capNhatSoLuong(productID, click) {
   const item = cart.find((item) => item.product.id === productID);
   if (item) {
@@ -148,7 +125,7 @@ function renderCart() {
         <button class="btn btn-info" onclick="capNhatSoLuong('${
           item.product.id
         }', 'decrease')">-</button>
-        <button class="btn btn-danger" onclick="removeItem('${
+        <button class="btn btn-danger" onclick="xoaSanPham('${
           item.product.id
         }')">X</button>
         </td>
@@ -161,6 +138,29 @@ function renderCart() {
   ).innerText = `Tổng tiền: $${totalAmount.toLocaleString()}`;
   document.getElementById("cartTableBody").innerHTML = cartContent;
 }
+
+document.addEventListener("click", function (event) {
+  if (event.target.classList.contains("btnAT-buy")) {
+    const clickedProductID = event.target.dataset.productId;
+    const clickedProduct = product.find((item) => item.id === clickedProductID);
+
+    if (clickedProduct) {
+      let existingCartItem = cart.find(
+        (item) => item.product.id === clickedProduct.id
+      );
+
+      if (existingCartItem) {
+        existingCartItem.quantity++;
+      } else {
+        let newCartItem = { product: clickedProduct, quantity: 1 };
+        cart.push(newCartItem);
+      }
+
+      renderCart();
+      setLocalStorage();
+    }
+  }
+});
 
 document
   .getElementById("checkoutButton")
