@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang chủ</title>
+
+  <!-- Font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- line awesome -->
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+
+  <!-- animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- flaticon -->
+  <link rel="stylesheet" href="./css/flaticon/flaticon.css">
+
+  <!-- BS4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+
+  <!-- lightbox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+    integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./css/main.css">
+
+  <style>
+    .loader-container {
+      border: 16px solid #f3f3f3;
+      /* Light grey */
+      border-top: 16px solid #3498db;
+      /* Blue */
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body id="myBody">
+  <header class="fixed-top">
+    <nav class="container-md navbar navbar-expand-lg">
+      <h1 id="logo">
+        <a class="navbar-brand" href="#">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <span class="logo">AT Mobile</span>
+        </a>
+      </h1>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ATNavbar"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fa fa-bars"></i>
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="ATNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./admin.html">Admin</a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="btn ml-2 py-3" id="switchButton" title="Click to switch theme">
+        <i class="far fa-moon"></i>
+        <i class="far fa-sun"></i>
+      </button>
+    </nav>
+  </header>
+
+  <section class="ATCarousel">
+    <div id="ATCarouselCaptions" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/bg15.png" class="d-block w-100" alt="">
+          <div class="carousel-caption container-md">
+            <div class="ATCarousel__content">
+              <h1 class="animate__animated animate__flipInX animate__delay-1s">AT Phone</h1>
+              <h3 class="animate__animated animate__flipInX animate__delay-1s">Best Marketplace of the Year -
+                2100!</h3>
+              <p class="animate__animated animate__fadeInDown" class="mt-4">
+                Welcome to our website - your destination for top-quality phones at affordable prices. We are
+                committed to
+                providing you with the most convenient and reliable online shopping experience. Browse through our
+                diverse
+                range of products and discover the latest smartphone models from leading brands in the market.
+                With
+                attentive customer service and fast delivery, we look forward to assisting you in finding the
+                perfect
+                phone to suit your needs. Explore now and experience the convenience and time-saving benefits of
+                shopping
+                for phones on our website.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/bg16.png" class="d-block w-100" alt="">
+          <div class="carousel-caption container">
+            <div class="ATCarousel__content">
+              <div class="row">
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                  <div>
+                    <h1 class="animate__animated animate__flipInX animate__delay-1s">iPhone</h1>
+                    <p class="animate__animated animate__flipInX animate__delay-1s">iPhone 10 and iPhone 11 are the
+                      successive models in Apple's line of smartphones, introducing numerous new features and notable
+                      improvements</p>
+
+                    <div class="animate__animated animate__fadeInUp animate__delay-1s">
+                      <button class="btnAT-info mr-2">
+                        <i class="fa fa-info-circle"></i> More Info
+                      </button>
+                      <button class="btnAT-shop">
+                        <i class="fa fa-shopping-cart"></i> Shop
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 d-md-block d-none">
+                  <img class="img-fluid" src="./img/product-header2.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="./img/bg17.png" class="d-block w-100" alt="">
+          <div class="carousel-caption container">
+            <div class="ATCarousel__content">
+              <div class="row">
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                  <div>
+                    <h1 class="animate__animated animate__flipInX animate__delay-1s">Samsung</h1>
+                    <p class="animate__animated animate__flipInX animate__delay-1s">Samsung Galaxy M51 and M52 are two
+                      notable additions to Samsung's Galaxy M series, offering a range of features and improvements.</p>
+                    <div class="animate__animated animate__fadeInUp animate__delay-1s">
+                      <button class="btnAT-info mr-2 ">
+                        <i class="fa fa-info-circle"></i> More Info
+                      </button>
+                      <button class="btnAT-shop">
+                        <i class="fa fa-shopping-cart"></i> Shop
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 d-md-block d-none">
+                  <img class="img-fluid" src="./img/samsung.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#ATCarouselCaptions" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#ATCarouselCaptions" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+    </div>
+  </section>
+
+  <section class="number">
+    <div class="container">
+      <div class="number__content">
+        <div class="row">
+          <div class="number__item col-12 col-md-6 col-lg-4">
+            <i class="flaticon-smile"></i>
+            <p><span class="counter">12415</span></p>
+            <p>Satisfied Clients</p>
+          </div>
+          <div class="number__item col-12 col-md-6 col-lg-4">
+            <i class="flaticon-line-chart"></i>
+            <p><span class="counter">1286</span></p>
+            <p>Product Solved</p>
+          </div>
+          <div class="number__item col-12 col-md-6 col-lg-4">
+            <i class="flaticon-confetti"></i>
+            <p><span class="counter">12</span></p>
+            <p>Years Services</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="products">
+    <h2 class="section-title">-Featured Products-</h2>
+    <div class="products__content container">
+      <div class="form-group row">
+        <label for="selLoai" class="col-sm-2 col-form-label">Show</label>
+        <div class="col-sm-10">
+          <select class="custom-select" id="selLoai" onchange="filtedItem(product)">
+            <option value="all" selected>Tất cả</option>
+            <option value="Iphone">Iphone</option>
+            <option value="Samsung">Samsung</option>
+          </select>
+        </div>
+      </div>
+      <div id="loader" style="display: none" class="loader-container"></div>
+      <div id="products__content_main" class="row"></div>
+    </div>
+  </section>
+
+
+  <footer class="footerPhone">
+    <div class="container footer__info">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h6>CONTACT INFO</h6>
+          <div class="info">
+            <p>
+              Address : Ho Chi Minh City
+            </p>
+            <p>
+              Phone Number :
+              <a href="tel:+1(21) 234 4567">+82 123 456 789</a>
+            </p>
+            <p>
+              Email : <a href="mailto:info@example.com">info@example.com</a>
+            </p>
+            <p>
+              Support :
+              <a href="mailto:info@support.com">info@support.com</a>
+            </p>
+            <div class="icon__social">
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-invision"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h6>OUR SERVICES</h6>
+          <ul class="info">
+            <li aria-current="true">
+              <a href="#">IPHONE</a>
+            </li>
+            <li>
+              <a href="#">SAMSUMG</a>
+            </li>
+            <li>
+              <a href="#">SIM CARD</a>
+            </li>
+            <li>
+              <a href="#">WORKSHOP</a>
+            </li>
+            <li>
+              <a href="#">ATPHONE CARE</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 q mb-4">
+          <h6>OUR LINK</h6>
+          <ul class="info">
+            <li aria-current="true">
+              <a href="#">HOME</a>
+            </li>
+            <li>
+              <a href="#">ABOUT</a>
+            </li>
+            <li>
+              <a href="#">SHOP</a>
+            </li>
+            <li>
+              <a href="#">BLOG</a>
+            </li>
+            <li>
+              <a href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>
+        ©2100 ATPhone All Rights Reserved | by
+        <span>AT</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#" class="back-to-top cd-top text-replace js-cd-top">
+    <i class="fa-solid fa-angle-up"></i>
+  </a>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Giỏ Hàng</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Tên sản phẩm</th>
+                <th scope="col">Số lượng</th>
+                <th scope="col">Giá tiền</th>
+                <th scope="col">Thao tác</th>
+              </tr>
+            </thead>
+            <tbody id="cartTableBody">
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <div id="totalAmount" class="mr-auto"></div>
+          <button type="button" class="btn btn-primary" id="checkoutButton">Thanh toán</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- waypoints -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <!-- BS4 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+  <!-- BACKTOTOP -->
+  <script src="./js/util.js"></script>
+  <script src="./js/main1.js"></script>
+
+  <!-- SWITCH THEME -->
+  <script src="./js/themeswitch.js"></script>
+
+  <!-- COUNT UP  -->
+  <script src="./js/jquery.countup.js"></script>
+  <script>
+    $('.counter').countUp({
+      time: 1000,
+      delay: 10
+    });
+  </script>
+  
+  <!-- AXIOS  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
+    integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="./src/models/product.js"></script>
+  <script src="./src/services/api.js"></script>
+  <script src="./src/controllers/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+.footerPhone {
+    background-color: #151421;
+    background-image: url(../img/map.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: $pd-5 0;
+
+    .footer__info h6 {
+        font-size: $fs-2;
+        font-weight: $fw-2;
+        color: $color-white;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: $mg-1;
+    }
+
+    .footer__info .info p,
+    .footer__info .info a {
+        font-size: $fs-7;
+        line-height: 28px;
+        color: $color-footer;
+        margin-bottom: $mg-4;
+        transition: all 0.5s;
+    }
+
+    .footer__info .info a:hover {
+        text-decoration: none;
+        color: $color-white;
+    }
+
+    .footer__info .info li {
+        list-style: none;
+        margin-top: $mg-4;
+    }
+
+    .footer__info .icon__social i {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: $fs-1;
+        text-align: center;
+        color: $color-footer;
+
+        border-radius: 50%;
+        transition: all 0.5s;
+    }
+
+    .footer__info .icon__social a {
+        text-decoration: none;
+    }
+
+    .footer__info .icon__social i:hover {
+        color: $color-white;
+    }
+
+    .footer__bottom {
+        font-size: $fs-2;
+        letter-spacing: 0.5px;
+        color: $color-footer;
+        text-align: center;
+        opacity: 1;
+
+        padding: $pd-10 0;
+    }
+
+    .footer__bottom span {
+        color: #00a63f;
+        transition: all 0.5s;
+    }
+
+    .footer__bottom span:hover {
+        color: #fff;
+    }
+}

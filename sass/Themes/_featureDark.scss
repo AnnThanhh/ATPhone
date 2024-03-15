@@ -1,0 +1,21 @@
+.dark {
+    .products {
+        .section-title {
+            color: $color-white;
+        }
+    }
+
+    .cardPhone {
+        box-shadow: none;
+        background-color: $color-dark-7;
+
+        img {
+            box-shadow: none;
+        }
+
+        .cardPhone__title,
+        .cardPhone__text {
+            color: $color-white;
+        }
+    }
+}

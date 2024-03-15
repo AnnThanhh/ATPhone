@@ -1,0 +1,108 @@
+header {
+    box-shadow: 0 2px 4px $color-white-1;
+    z-index: 10;
+    background-color: $color-white;
+
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+
+    #logo {
+        .navbar-brand {
+            .logo {
+                @include styleText($fs-3, $fw-5, $color-black);
+                text-transform: capitalize;
+            }
+        }
+
+        i {
+            font-size: $fs-6 ;
+            font-weight: $fw-5 ;
+            color: $color-blue;
+            vertical-align: middle;
+        }
+    }
+
+    .navbar-toggler-icon {
+        font-size: $fs-3;
+        line-height: 1.5em;
+        color: $liner-gradient;
+    }
+
+    #ATNavbar {
+
+        .nav-link {
+            @include styleText($fs-2, $fw-4, $color-black);
+            padding: 25px;
+            transition: 0.2s;
+
+            &::after {
+                content: "";
+                width: 100%;
+                height: 2px;
+                display: block;
+                background-color: $color-blue;
+                transform: scaleX(0);
+                transition: 0.2s;
+            }
+
+            &:hover {
+                @include styleText($fs-2, $fw-4, $color-blue);
+
+                &::after {
+                    transform: scaleX(1);
+                }
+            }
+        }
+
+        .active {
+            .nav-link {
+                @include styleText($fs-2, $fw-4, $color-blue);
+
+                &::after {
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+
+
+
+    #site-header .navbar-collapse.show {
+        background-color: transparent;
+    }
+
+}
+
+
+
+
+
+//responsive
+
+@media screen and (max-width: 992px) {
+    header .navbar-collapse {
+        margin-bottom: 0px;
+    }
+
+    #ATNavbar .nav-item {
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    #ATNavbar #switchButton {
+        position: absolute;
+        right: 80px;
+        top: 20px;
+    }
+
+    #ATNavbar .control {
+        position: absolute;
+        right: 130px;
+        top: 24px;
+    }
+}

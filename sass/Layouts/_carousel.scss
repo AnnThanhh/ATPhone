@@ -1,0 +1,55 @@
+.ATCarousel {
+
+    padding-bottom: $pd-5;
+
+    .ATCarousel__content {
+
+        z-index: 2;
+        padding-bottom: $pd-1;
+    }
+
+    h1 {
+        @include styleText($fs-4, $fw-3, $color-blue);
+    }
+
+    h3 {
+        @include styleText($fs-3, $fw-2, $color-blue);
+        margin-bottom: $mg-1;
+    }
+
+    p {
+        @include styleText($fs-2, $fw-1, $color-dark);
+        margin-bottom: $mg-2;
+    }
+
+    #ATCarouselCaptions {
+        .carousel-item>img {
+            height: 90vh;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+}
+
+//responsive
+
+@media screen and (max-width: 992px) {
+    .ATCarousel .ATCarousel__content h1 {
+        @include styleText($fs-4, $fw-3, $color-blue)
+    }
+
+    .ATCarousel .ATCarousel__content h3 {
+        @include styleText($fs-3, $fw-2, $color-blue)
+    }
+
+    .ATCarousel .ATCarousel__content p {
+        @include styleText($fs-2, $fw-1, $color-dark);
+        margin-bottom: $mg-2;
+    }
+}

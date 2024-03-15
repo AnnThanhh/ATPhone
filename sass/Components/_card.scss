@@ -1,0 +1,31 @@
+.cardPhone {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+    border: $bd-1 solid transparent;
+    padding: $pd-1 + 5;
+    margin-bottom: $mg-1;
+
+    background-color: $color-blue-1;
+
+    img {
+        box-shadow: 6px 6px 12px $color-white;
+        border-radius: $bd-2;
+    }
+
+    .cardPhone__title {
+        @include styleText($fs-7, $fw-3, $color-black);
+    }
+
+    .cardPhone__text {
+        @include styleText($fs-1, $fw-1, $color-black);
+        width: 100%;
+    }
+
+    .cardPhone__rating {
+        color: $color-yellow;
+    }
+
+    .card-body {
+        margin: 0 (-$mg-1);
+        padding: (-$pd-4) 0;
+    }
+}

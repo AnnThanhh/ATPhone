@@ -1,0 +1,15 @@
+#myBody {
+    background-color: $color-white;
+}
+
+#switchButton {
+    background-color: transparent;
+}
+
+#switchButton .fa-sun {
+    display: none;
+}
+
+#switchButton .fa-moon {
+    display: block;
+}

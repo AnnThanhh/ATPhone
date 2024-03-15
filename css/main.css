@@ -1,0 +1,518 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  color: #636363;
+  font-size: 25px;
+  font-weight: 300;
+  color: black;
+  background-color: white;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  padding: 15px 0;
+}
+
+.section-title {
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: black;
+}
+
+.btnAT-info {
+  background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+  padding: 15px 45px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  transition: 0.5s;
+  background-size: 200%;
+}
+.btnAT-info:hover {
+  background-position: right center;
+}
+
+.btnAT-shop {
+  background-image: linear-gradient(120deg, #60a4f4, #2a73dd);
+  padding: 20px 45px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+.btnAT-shop:hover {
+  opacity: 0.75;
+}
+
+.btnAT-buy {
+  background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+  padding: 10px 25px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 400;
+  color: white;
+  transition: 0.5s;
+  background-size: 200%;
+  margin-left: -5px;
+}
+.btnAT-buy i {
+  font-size: 25px;
+}
+.btnAT-buy:hover {
+  box-shadow: 1px 1px 3px white;
+}
+
+.cardPhone {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  border: 2px solid transparent;
+  padding: 30px;
+  margin-bottom: 25px;
+  background-color: #feeff3;
+}
+.cardPhone img {
+  box-shadow: 6px 6px 12px white;
+  border-radius: 8px;
+}
+.cardPhone .cardPhone__title {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+.cardPhone .cardPhone__text {
+  font-size: 15px;
+  font-weight: 300;
+  color: black;
+  width: 100%;
+}
+.cardPhone .cardPhone__rating {
+  color: #f9d412;
+}
+.cardPhone .card-body {
+  margin: 0 -25px;
+  padding: -45px 0;
+}
+
+#myBody {
+  background-color: white;
+}
+
+#switchButton {
+  background-color: transparent;
+}
+
+#switchButton .fa-sun {
+  display: none;
+}
+
+#switchButton .fa-moon {
+  display: block;
+}
+
+header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.493);
+  z-index: 10;
+  background-color: white;
+}
+header .fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+header #logo .navbar-brand .logo {
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+  text-transform: capitalize;
+}
+header #logo i {
+  font-size: 36px;
+  font-weight: 700;
+  color: #f55f8d;
+  vertical-align: middle;
+}
+header .navbar-toggler-icon {
+  font-size: 25px;
+  line-height: 1.5em;
+  color: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+}
+header #ATNavbar .nav-link {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  padding: 25px;
+  transition: 0.2s;
+}
+header #ATNavbar .nav-link::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: #f55f8d;
+  transform: scaleX(0);
+  transition: 0.2s;
+}
+header #ATNavbar .nav-link:hover {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f55f8d;
+}
+header #ATNavbar .nav-link:hover::after {
+  transform: scaleX(1);
+}
+header #ATNavbar .active .nav-link {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f55f8d;
+}
+header #ATNavbar .active .nav-link::after {
+  transform: scaleX(1);
+}
+header #site-header .navbar-collapse.show {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  header .navbar-collapse {
+    margin-bottom: 0px;
+  }
+  #ATNavbar .nav-item {
+    margin: 5px 0;
+    text-align: center;
+  }
+  #ATNavbar #switchButton {
+    position: absolute;
+    right: 80px;
+    top: 20px;
+  }
+  #ATNavbar .control {
+    position: absolute;
+    right: 130px;
+    top: 24px;
+  }
+}
+.ATCarousel {
+  padding-bottom: 100px;
+}
+.ATCarousel .ATCarousel__content {
+  z-index: 2;
+  padding-bottom: 25px;
+}
+.ATCarousel h1 {
+  font-size: 70px;
+  font-weight: 500;
+  color: #f55f8d;
+}
+.ATCarousel h3 {
+  font-size: 25px;
+  font-weight: 400;
+  color: #f55f8d;
+  margin-bottom: 25px;
+}
+.ATCarousel p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #636363;
+  margin-bottom: 30px;
+}
+.ATCarousel #ATCarouselCaptions .carousel-item > img {
+  height: 90vh;
+  object-fit: cover;
+}
+.ATCarousel #ATCarouselCaptions .carousel-caption {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 992px) {
+  .ATCarousel .ATCarousel__content h1 {
+    font-size: 70px;
+    font-weight: 500;
+    color: #f55f8d;
+  }
+  .ATCarousel .ATCarousel__content h3 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #f55f8d;
+  }
+  .ATCarousel .ATCarousel__content p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #636363;
+    margin-bottom: 30px;
+  }
+}
+.footerPhone {
+  background-color: #151421;
+  background-image: url(../img/map.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+.footerPhone .footer__info h6 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 25px;
+}
+.footerPhone .footer__info .info p,
+.footerPhone .footer__info .info a {
+  font-size: 20px;
+  line-height: 28px;
+  color: #97a1a9;
+  margin-bottom: 15px;
+  transition: all 0.5s;
+}
+.footerPhone .footer__info .info a:hover {
+  text-decoration: none;
+  color: white;
+}
+.footerPhone .footer__info .info li {
+  list-style: none;
+  margin-top: 15px;
+}
+.footerPhone .footer__info .icon__social i {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 15px;
+  text-align: center;
+  color: #97a1a9;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.footerPhone .footer__info .icon__social a {
+  text-decoration: none;
+}
+.footerPhone .footer__info .icon__social i:hover {
+  color: white;
+}
+.footerPhone .footer__bottom {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  color: #97a1a9;
+  text-align: center;
+  opacity: 1;
+  padding: 20px 0;
+}
+.footerPhone .footer__bottom span {
+  color: #00a63f;
+  transition: all 0.5s;
+}
+.footerPhone .footer__bottom span:hover {
+  color: #fff;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 18px;
+  background: #f55f8d;
+  color: white;
+  opacity: 0;
+  border: 1px solid transparent;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.cd-top--is-visible {
+  opacity: 1;
+}
+
+@media screen and (max-width: 575.98px) {
+  .products {
+    width: 90%;
+  }
+}
+.products {
+  background-image: url(../img/bg2.png);
+  padding-top: 45px;
+}
+.products .loader-container {
+  position: relative;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.number {
+  background-image: url(../img/bg14.png);
+  background-position: center;
+  background-size: cover;
+  padding: 60px 0;
+  text-align: center;
+}
+.number .number__item i {
+  font-size: 45px;
+  color: white;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  display: inline-block;
+  background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+  background-size: 200%;
+}
+.number .number__item p:first-of-type {
+  font-size: 70px;
+  font-weight: 800;
+  color: #f55f8d;
+}
+.number .number__item p:last-of-type {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#exampleModal .modal-dialog {
+  max-width: 1000px;
+}
+#exampleModal .modal-content {
+  background-color: #feeff3;
+  border: none;
+}
+#exampleModal .modal-header {
+  background-color: #f55f8d;
+  color: white;
+  border-bottom: none;
+}
+#exampleModal .modal-title {
+  font-weight: 500;
+}
+#exampleModal .modal-body {
+  padding: 30px;
+}
+#exampleModal .modal-footer {
+  border-top: none;
+}
+#exampleModal .btn-secondary {
+  background-color: #636363;
+  color: white;
+  border: none;
+}
+#exampleModal .btn-secondary:hover {
+  background-color: #434343;
+}
+#exampleModal .close {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  opacity: 1;
+}
+
+.qlsp {
+  margin: 25px 15px;
+  font-size: 20px;
+}
+.qlsp img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.dark#myBody {
+  background-color: #151421;
+}
+
+.dark #switchButton {
+  background-color: transparent;
+}
+
+.dark #switchButton .fa-sun {
+  display: block;
+  color: white;
+}
+
+.dark #switchButton .fa-moon {
+  display: none;
+}
+
+.dark .cardPhone {
+  box-shadow: none;
+  background-color: black;
+}
+.dark .cardPhone img {
+  box-shadow: none;
+}
+.dark .cardPhone .cardPhone__title,
+.dark .cardPhone .cardPhone__text {
+  color: white;
+}
+
+.dark header {
+  background-color: #151421;
+}
+.dark header #logo .navbar-brand .logo {
+  color: white;
+}
+.dark header .navbar-toggler-icon {
+  color: #f55f8d;
+}
+.dark header #ATNavbar .nav-link {
+  color: white;
+}
+.dark header #ATNavbar .nav-link:hover {
+  color: #f55f8d;
+}
+.dark header #ATNavbar .active .nav-link {
+  color: #f55f8d;
+}
+
+.dark .ATCarousel .carousel-item p {
+  color: white;
+}
+.dark .shape path {
+  fill: #151421;
+}
+
+.dark .products .section-title {
+  color: white;
+}
+.dark .cardPhone {
+  box-shadow: none;
+  background-color: #100f19;
+}
+.dark .cardPhone img {
+  box-shadow: none;
+}
+.dark .cardPhone .cardPhone__title,
+.dark .cardPhone .cardPhone__text {
+  color: white;
+}
+
+.dark .number .number__item p:last-of-type {
+  color: white;
+}/*# sourceMappingURL=main.css.map */

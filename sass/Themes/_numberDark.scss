@@ -1,0 +1,7 @@
+.dark {
+    .number {
+        .number__item p:last-of-type {
+            color: $color-white;
+        }
+    }
+}

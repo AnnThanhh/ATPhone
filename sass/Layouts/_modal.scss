@@ -1,0 +1,45 @@
+#exampleModal {
+    .modal-dialog {
+        max-width: 1000px;
+    }
+
+    .modal-content {
+        background-color: $color-blue-1;
+        border: none;
+    }
+
+    .modal-header {
+        background-color: $color-blue;
+        color: $color-white;
+        border-bottom: none;
+    }
+
+    .modal-title {
+        font-weight: $fw-3;
+    }
+
+    .modal-body {
+        padding: $pd-1 + 5;
+    }
+
+    .modal-footer {
+        border-top: none;
+    }
+
+    .btn-secondary {
+        background-color: $color-dark;
+        color: $color-white;
+        border: none;
+    }
+
+    .btn-secondary:hover {
+        background-color: #434343;
+    }
+
+    .close {
+        font-size: $fs-9;
+        font-weight: $fw-5;
+        color: $color-white;
+        opacity: 1;
+    }
+}

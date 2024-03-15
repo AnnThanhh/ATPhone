@@ -1,0 +1,33 @@
+.dark {
+    header {
+        background-color: $color-dark-3;
+
+        #logo {
+            .navbar-brand {
+                .logo {
+                    color: $color-white;
+                }
+            }
+        }
+
+        .navbar-toggler-icon {
+            color: $color-blue;
+        }
+
+        #ATNavbar {
+            .nav-link {
+                color: $color-white;
+
+                &:hover {
+                    color: $color-blue;
+                }
+            }
+
+            .active {
+                .nav-link {
+                    color: $color-blue;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.dark#myBody {
+    background-color: $color-dark-3;
+}
+
+.dark #switchButton {
+    background-color: transparent;
+
+}
+
+.dark #switchButton .fa-sun {
+    display: block;
+    color: $color-white;
+}
+
+.dark #switchButton .fa-moon {
+    display: none;
+}

@@ -1,0 +1,13 @@
+.dark {
+    .cardPhone {
+        box-shadow: none;
+        background-color: $color-black;
+        img {
+            box-shadow: none;
+        }
+        .cardPhone__title,
+        .cardPhone__text {
+            color: $color-white;
+        }
+    }
+}

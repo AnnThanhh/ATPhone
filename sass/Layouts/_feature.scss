@@ -1,0 +1,19 @@
+@include responsive("small-down") {
+    .products {
+        width: 90%;
+    }
+}
+
+.products {
+    background-image: url(../img/bg2.png);
+
+    padding-top: $pd-4;
+
+    .loader-container {
+        position: relative;
+        top: 50%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+    }
+}

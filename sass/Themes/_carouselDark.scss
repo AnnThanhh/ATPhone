@@ -1,0 +1,14 @@
+.dark {
+    .ATCarousel {
+        .carousel-item {
+            p {
+                color: $color-white;
+            }
+
+        }
+    }
+
+    .shape path {
+        fill: $color-dark-5;
+    }
+}

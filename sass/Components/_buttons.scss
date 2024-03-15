@@ -1,0 +1,38 @@
+.btnAT-info {
+    @include styleButton($liner-gradient, $pd-3, $pd-4, $bd-1 solid transparent, $bd-2);
+    @include styleText($fs-1, $fw-2, $color-white);
+    transition: .5s;
+    background-size: 200%;
+
+    &:hover {
+        background-position: right center;
+    }
+
+}
+
+.btnAT-shop {
+    @include styleButton($liner-gradient-1, $pd-10, $pd-4, none, $bd-2);
+    @include styleText($fs-1, $fw-2, $color-white);
+    transition: .5s;
+    text-transform: uppercase;
+
+    &:hover {
+        opacity: 0.75;
+    }
+}
+
+.btnAT-buy {
+    @include styleButton($liner-gradient, $pd-9 + 5, $pd-1, $bd-1 solid transparent, $bd-2);
+    @include styleText($fs-1 - 4, $fw-2, $color-white);
+    transition: .5s;
+    background-size: 200%;
+    margin-left: -$mg-0;
+
+    i {
+        font-size: $fs-3;
+    }
+
+    &:hover {
+        box-shadow: 1px 1px 3px $color-white
+    }
+}
